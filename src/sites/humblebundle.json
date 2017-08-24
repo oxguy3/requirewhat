@@ -6,7 +6,7 @@
     "password_rules": [
         {
             "@type": "length",
-            "@rule": "allow",
+            "@rule": "require",
             "min": 4
         }
     ]

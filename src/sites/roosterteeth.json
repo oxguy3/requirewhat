@@ -1,0 +1,25 @@
+{
+    "name": "Rooster Teeth",
+    "domains": [
+        "roosterteeth.com",
+        "*.roosterteeth.com"
+    ],
+    "password_rules": [
+        {
+            "@type": "length",
+            "@rule": "require",
+            "min": 8
+        },
+        {
+            "@type": "char",
+            "@rule": "require",
+            "classes": [
+                "punct",
+                "upper",
+                "lower",
+                "digit"
+            ],
+            "match_all": true
+        }
+    ]
+}

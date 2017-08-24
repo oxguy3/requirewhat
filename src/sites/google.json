@@ -7,13 +7,13 @@
     "password_rules": [
         {
             "@type": "length",
-            "@rule": "allow",
+            "@rule": "require",
             "min": 8,
             "max": 100
         },
         {
             "@type": "char",
-            "@rule": "allow",
+            "@rule": "require",
             "classes": [
                 "print"
             ]
@@ -24,7 +24,7 @@
             "classes": [
                 "space"
             ],
-            "match": [
+            "position": [
                 "start",
                 "end"
             ]

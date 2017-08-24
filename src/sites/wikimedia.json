@@ -17,7 +17,7 @@
     "password_rules": [
         {
             "@type": "length",
-            "@rule": "allow",
+            "@rule": "require",
             "min": 1
         },
         {
@@ -38,7 +38,7 @@
                 "wikivoyage",
                 "wikidata"
             ],
-            "match": [
+            "position": [
                 "whole"
             ]
         }

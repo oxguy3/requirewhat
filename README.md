@@ -62,7 +62,7 @@ At the root level of the JSON object, you must have these keys:
 * `domains`: An array of domain names this config applies to. Wildcards can be indicated with asterisks (\*)
 * `password_rules`: An ordered array of rules that apply to this site's passwords. Each rule should have the following keys:
   * `@type`: The rule type as a string. See the below section "Password rule types" for possible values.
-  * `@rule`: "allow" or "deny"
+  * `@rule`: "require" or "deny"
   * any additional options relevant to the rule type
 
 ### Password rule types
@@ -78,7 +78,8 @@ Options:
 | --- | --- | --- |
 | `classes` | N | An array of classes of characters that activate this rule |
 | `chars` | N | A string of individual characters that activate this rule |
-| `match` | N | Where must these characters be located? Options: "start", "end", "inside" (i.e. not start or end), "whole" |
+| `match_all` | N | If true, all classes and chars must match. (default: false) |
+| `position` | N | Where must these characters be located? Options: "start", "end", "inside" (i.e. not start or end), "whole", "anywhere". (default: ["anywhere"]) |
 
 The available classes include:
 
@@ -121,6 +122,7 @@ The `items` array can contain any of the following string values:
 * "dob": Birthday
 * "email": Email address
 * "name": Name (first, last, full, whatever)
+* "phone": Phone number
 * "previous_password": A previously used password
 * "username": Username
 
@@ -132,7 +134,8 @@ Options:
 | Name | Required? | Description |
 | --- | --- | --- |
 | `strings` | N | An array of individual strings that activate this rule |
-| `match` | N | Where must these strings be located? Options: "start", "end", "inside" (i.e. not start or end), "whole" |
+| `match_all` | N | If true, all strings must match. (default: false) |
+| `position` | N | Where must these strings be located? Options: "start", "end", "inside" (i.e. not start or end), "whole", "anywhere". (default: ["anywhere"]) |
 
 The available classes include:
 

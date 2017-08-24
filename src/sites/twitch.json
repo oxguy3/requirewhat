@@ -1,14 +1,14 @@
 {
-    "name": "Reddit",
+    "name": "Twitch",
     "domains": [
-        "reddit.com",
-        "*.reddit.com"
+        "www.twitch.tv",
+        "passport.twitch.tv"
     ],
     "password_rules": [
         {
             "@type": "length",
             "@rule": "require",
-            "min": 6
+            "min": 8
         }
     ]
 }

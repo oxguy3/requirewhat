@@ -6,7 +6,7 @@
     "password_rules": [
         {
             "@type": "zxcvbn",
-            "@rule": "deny",
+            "@rule": "require",
             "score_min": 3
         },
         {

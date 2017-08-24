@@ -1,14 +1,13 @@
 {
-    "name": "Reddit",
+    "name": "Trello",
     "domains": [
-        "reddit.com",
-        "*.reddit.com"
+        "trello.com"
     ],
     "password_rules": [
         {
             "@type": "length",
             "@rule": "require",
-            "min": 6
+            "min": 8
         }
     ]
 }
