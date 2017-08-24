@@ -4,12 +4,6 @@
         "reddit.com",
         "*.reddit.com"
     ],
-    "links": {
-        "login": "https://www.reddit.com/login",
-        "register": "https://www.reddit.com/register",
-        "change_password": "https://www.reddit.com/prefs/update/",
-        "reset_password": "https://www.reddit.com/password"
-    },
     "password_rules": [
         {
             "@type": "length",

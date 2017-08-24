@@ -4,11 +4,6 @@
         "accounts.google.com",
         "myaccount.google.com"
     ],
-    "links": {
-        "login": "https://accounts.google.com/signin",
-        "register": "https://accounts.google.com/SignUp",
-        "change_password": "https://myaccount.google.com/signinoptions/password"
-    },
     "password_rules": [
         {
             "@type": "length",

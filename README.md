@@ -60,12 +60,6 @@ At the root level of the JSON object, you must have these keys:
 
 * `name`: A user-displayable name for the config.
 * `domains`: An array of domain names this config applies to. Wildcards can be indicated with asterisks (\*)
-* `links`: URLs of pages relevant to logging in and setting passwords. All are optional, but should be included if they exist. The keys are:
-  * `login`: login form
-  * `logout`: logout page (page that will log you out instantly -- don't include if it must be submitted as a form)
-  * `register`: registration/signup form page
-  * `change_password`: change password form  for logged-in users
-  * `reset_password`: forgotten password reset form for logged-out users
 * `password_rules`: An ordered array of rules that apply to this site's passwords. Each rule should have the following keys:
   * `@type`: The rule type as a string. See the below section "Password rule types" for possible values.
   * `@rule`: "allow" or "deny"

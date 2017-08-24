@@ -14,13 +14,6 @@
         "*.wikivoyage.org",
         "*.wikimedia.org"
     ],
-    "links": {
-        "login": "https://www.wikipedia.org/wiki/Special:UserLogin",
-        "logout": "https://www.wikipedia.org/wiki/Special:UserLogout",
-        "register": "https://www.wikipedia.org/wiki/Special:CreateAccount",
-        "change_password": "https://www.wikipedia.org/wiki/Special:ChangePassword",
-        "reset_password": "https://www.wikipedia.org/wiki/Special:PasswordReset"
-    },
     "password_rules": [
         {
             "@type": "length",
