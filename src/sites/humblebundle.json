@@ -1,0 +1,19 @@
+{
+    "name": "Humble Bundle",
+    "domains": [
+        "www.humblebundle.com"
+    ],
+    "links": {
+        "login": "https://www.humblebundle.com/login",
+        "register": "https://www.humblebundle.com/signup",
+        "change_password": "https://www.humblebundle.com/user/settings",
+        "reset_password": "https://www.humblebundle.com/user/forgot"
+    },
+    "password_rules": [
+        {
+            "@type": "length",
+            "@rule": "allow",
+            "min": 4
+        }
+    ]
+}

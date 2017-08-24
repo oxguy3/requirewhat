@@ -1,0 +1,27 @@
+{
+    "name": "MyAnimeList",
+    "domains": [
+        "myanimelist.net"
+    ],
+    "links": {
+        "login": "https://myanimelist.net/login.php",
+        "register": "https://myanimelist.net/register.php",
+        "change_password": "https://myanimelist.net/editprofile.php?go=myoptions",
+        "reset_password": "https://myanimelist.net/password.php"
+    },
+    "password_rules": [
+        {
+            "@type": "zxcvbn",
+            "@rule": "deny",
+            "score_min": 3
+        },
+        {
+            "@type": "personal",
+            "@rule": "deny",
+            "items": [
+                "email",
+                "username"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "name": "Wikimedia",
+    "domains": [
+        "*.wikipedia.org",
+        "*.wiktionary.org",
+        "*.wikiquote.org",
+        "*.wikibooks.org",
+        "wikisource.org",
+        "*.wikisource.org",
+        "*.wikinews.org",
+        "*.wikiversity.org",
+        "www.mediawiki.org",
+        "*.wikidata.org",
+        "*.wikivoyage.org",
+        "*.wikimedia.org"
+    ],
+    "links": {
+        "login": "https://www.wikipedia.org/wiki/Special:UserLogin",
+        "logout": "https://www.wikipedia.org/wiki/Special:UserLogout",
+        "register": "https://www.wikipedia.org/wiki/Special:CreateAccount",
+        "change_password": "https://www.wikipedia.org/wiki/Special:ChangePassword",
+        "reset_password": "https://www.wikipedia.org/wiki/Special:PasswordReset"
+    },
+    "password_rules": [
+        {
+            "@type": "length",
+            "@rule": "allow",
+            "min": 1
+        },
+        {
+            "@type": "string",
+            "@rule": "deny",
+            "strings": [
+                "mediawiki",
+                "wiki",
+                "wikipedia",
+                "wiktionary",
+                "wikiquote",
+                "wikibooks",
+                "wikisource",
+                "wikinews",
+                "wikiversity",
+                "mediawiki",
+                "wikidata",
+                "wikivoyage",
+                "wikidata"
+            ],
+            "match": [
+                "whole"
+            ]
+        }
+    ]
+}

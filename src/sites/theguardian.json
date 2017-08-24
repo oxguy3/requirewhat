@@ -1,0 +1,20 @@
+{
+    "name": "The Guardian",
+    "domains": [
+        "*.theguardian.com"
+    ],
+    "links": {
+        "login": "https://profile.theguardian.com/signin",
+        "register": "https://profile.theguardian.com/register",
+        "change_password": "https://profile.theguardian.com/password/change",
+        "reset_password": "https://profile.theguardian.com/reset"
+    },
+    "password_rules": [
+        {
+            "@type": "length",
+            "@rule": "allow",
+            "min": 6,
+            "max": 72
+        }
+    ]
+}

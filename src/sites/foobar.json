@@ -1,0 +1,30 @@
+{
+    "name": "Foobar",
+    "domains": [
+        "foobar.com",
+        "*.foobar.com"
+    ],
+    "requirements": {
+        "min_length": 8,
+        "max_length": 64,
+        "banned_characters": [
+            "*",
+            "[",
+            "]",
+            "(",
+            ")",
+            ":digit:"
+        ],
+        "required_characters": [
+            ":lower:",
+            ":upper:",
+            ".,_"
+        ],
+        "no_reuse": true,
+        "custom_rules": [
+            {
+                "en": "Must be an anagram"
+            }
+        ]
+    }
+}

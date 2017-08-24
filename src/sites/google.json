@@ -1,0 +1,45 @@
+{
+    "name": "Google",
+    "domains": [
+        "accounts.google.com",
+        "myaccount.google.com"
+    ],
+    "links": {
+        "login": "https://accounts.google.com/signin",
+        "register": "https://accounts.google.com/SignUp",
+        "change_password": "https://myaccount.google.com/signinoptions/password"
+    },
+    "password_rules": [
+        {
+            "@type": "length",
+            "@rule": "allow",
+            "min": 8,
+            "max": 100
+        },
+        {
+            "@type": "char",
+            "@rule": "allow",
+            "classes": [
+                "print"
+            ]
+        },
+        {
+            "@type": "char",
+            "@rule": "deny",
+            "classes": [
+                "space"
+            ],
+            "match": [
+                "start",
+                "end"
+            ]
+        },
+        {
+            "@type": "personal",
+            "@rule": "deny",
+            "items": [
+                "previous_password"
+            ]
+        }
+    ]
+}
