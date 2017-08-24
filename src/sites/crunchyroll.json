@@ -1,0 +1,25 @@
+{
+    "name": "Crunchyroll",
+    "domains": [
+        "www.crunchyroll.com"
+    ],
+    "password_rules": [
+        {
+            "@type": "length",
+            "@rule": "require",
+            "min": 6
+        },
+        {
+            "@type": "char",
+            "@rule": "deny",
+            "chars": " "
+        },
+        {
+            "@type": "personal",
+            "@rule": "deny",
+            "items": [
+                "username"
+            ]
+        }
+    ]
+}
