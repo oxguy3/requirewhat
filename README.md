@@ -1,8 +1,10 @@
 # RequireWhat
 
-Tells you what a website's password requirements are so you don't have to guess
+A Chrome extension that tells you what a website's password requirements are so you don't have to guess
 
 ## Site configuration
+
+This extension uses a large collection of handwritten config files to define the password rules for each website. These can be found in the src/sites/ directory of this repository.
 
 ### Example
 
