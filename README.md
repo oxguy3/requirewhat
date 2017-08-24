@@ -71,7 +71,7 @@ At the root level of the JSON object, you must have these keys:
 
 ### Password rule types
 
-Here are all the currently existing types of password rules. Any option which does not have a default value is a required option.
+Here are all the currently existing types of password rules.
 
 #### char
 Specifies requirements for the types of characters allowed in the password.
