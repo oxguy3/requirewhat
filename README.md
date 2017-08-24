@@ -17,29 +17,22 @@ Here is a barebones basic configuration for an example website:
         "example.com",
         "*.example.com"
     ],
-    "links": {
-        "login": "https://example.com/login",
-        "logout": "https://example.com/logout",
-        "register": "https://example.com/register",
-        "change_password": "https://example.com/change_password",
-        "reset_password": "https://example.com/reset_password"
-    },
     "password_rules": [
         {
             "@type": "length",
-            "@rule": "allow",
+            "@rule": "require",
             "min": 10,
             "max": 20
         },
         {
             "@type": "zxcvbn",
-            "@rule": "allow",
+            "@rule": "require",
             "score_min": 3
         },
         {
             "@type": "personal",
             "@rule": "deny",
-            "types": [
+            "items": [
                 "email",
                 "username"
             ]
