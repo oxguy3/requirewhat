@@ -1,0 +1,13 @@
+{
+    "name": "Dropbox",
+    "domains": [
+        "www.dropbox.com"
+    ],
+    "password_rules": [
+        {
+            "@type": "length",
+            "@rule": "require",
+            "min": 6
+        }
+    ]
+}
